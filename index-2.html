@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="button-block">
+    <button class="button">
+        Scroll Down
+    </button>
+</div>
+<footer>
+    lorem10
+</footer>
+
+<script>
+    function scrollTo(element) {
+        window.scroll({
+            left: 0,
+            top: element.offsetTop,
+            behavior: 'smooth',
+        });
+    }
+
+    const button = document.querySelector('.button');
+    const footer = document.querySelector('#footer');
+
+    button.addEventListener('click', () => {
+        scrollTo(footer);
+    })
+</script>
+</body>
+</html>
